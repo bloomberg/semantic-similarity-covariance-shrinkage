@@ -63,4 +63,4 @@ contact us at opensource@bloomberg.net.
 
 ## Security Vulnerability Reporting
 
-Please refer to the project [Security Policy](SECURITY.md).
+Please refer to the project [Security Policy](https://github.com/bloomberg/semantic-similarity-covariance-shrinkage/security/policy).
