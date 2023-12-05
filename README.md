@@ -1,6 +1,6 @@
 # Semantic Similarity Covariance Matrix Shrinkage
 
-This repository contains the supporting code for the Semantic Similarity Covariance Matrix Shrinkage paper.
+This repository contains the supporting code for the Semantic Similarity Covariance Matrix Shrinkage paper published at [EMNLP 2023](https://2023.emnlp.org).
 It implements the methods for shrinking covariance matrices using a cosine similarity target.
 
 ## Menu
@@ -15,14 +15,14 @@ It implements the methods for shrinking covariance matrices using a cosine simil
 
 ## Installation
 
-This project requires Python3.8 or greater. Clone the repository and install the module:
+This project requires Python 3.8 or greater. Clone the repository and install the module:
 ```
 python3.8 -m pip install .
 ```
 
 ## Quick Start
 
-The library requires a cosine similarity matrix that can be generated from normalized embeddings as an input. Assuming a set of `k` `embeddings` of dimension `p` stored in a Pytorch `[k,p]` tensor, the similarity matrix can be built using:
+The library requires a cosine similarity matrix that can be generated from normalized embeddings as an input. Assuming a set of `k` `embeddings` of dimension `p` stored in a PyTorch `[k,p]` tensor, the similarity matrix can be built using:
 
 ```python
 import torch
@@ -31,7 +31,7 @@ normalized_embeddings = torch.nn.functional.normalize(embeddings)
 similarity_matrix = normalized_embeddings @ normalized_embeddings.t()
 ```
 
-Assuming the random variable observations (e.g. stock price returns) are available as a `[N,p]` tensor called `returns`, the shrunk covariance matrix ca be computed directly using :
+Assuming the random variable observations (e.g., stock price returns) are available as a `[N,p]` tensor called `returns`, the shrunk covariance matrix can be computed directly using:
 ```python
 from semantic_shrinkage import SemanticShrinkage
 
