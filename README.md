@@ -1,6 +1,6 @@
 # Semantic Similarity Covariance Matrix Shrinkage
 
-This repository contains the supporting code for the Semantic Similarity Covariance Matrix Shrinkage paper published at [EMNLP 2023](https://2023.emnlp.org).
+This repository contains the supporting code for [Semantic Similarity Covariance Matrix Shrinkage](https://aclanthology.org/2023.findings-emnlp.668/), published at [EMNLP 2023](https://2023.emnlp.org).
 It implements the methods for shrinking covariance matrices using a cosine similarity target.
 
 ## Menu
